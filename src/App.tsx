@@ -1,17 +1,19 @@
 import './App.scss'
+import Hero from './component/hero/Hero'
 import Navbar from './component/navbar/Navbar'
 
 function App() {
 
   return (
     <div className='w-full h-full'>
-      <section>
+      <section id='Homepage'>
         <Navbar/>
+        <Hero/>
       </section >
-      <section >Parallax</section>
-      <section>Portfolio1</section>
-      <section>Portfolio2</section>
-      <section>Cantact</section>
+      <section id="Services">Parallax</section>
+      <section id="Portfolio">Portfolio1</section>
+      <section id="About">About</section>
+      <section id="Contact">Cantact</section>
 
     </div>
   )

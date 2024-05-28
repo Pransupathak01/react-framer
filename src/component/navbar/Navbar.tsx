@@ -1,23 +1,35 @@
+import Sidebar from "../sidebar/Sidebar";
 import "./Navbar.scss";
+import {motion} from "framer-motion";
 
 const Navbar = () => {
   return (
     <div className="navbar">
+   
       {/* Sidebar */}
+      
+      
       <div className="wrapper">
-        <span>Lama Dev</span>
+      <Sidebar/>
+        <motion.span
+         initial={{opacity:0, scale:0.5}} 
+         animate={{opacity:1, scale:1}}
+         transition={{duration:0.5}}
+         >
+          Lama Dev
+          </motion.span>
         <div className="social">
           <a href="#">
-            <img src="./linkedin.png" alt="" />
+            <img src="./linkedin.png" alt="linkedin" />
           </a>
           <a href="#">
-            <img src="./instagram.png"  alt="" />
+            <img src="./instagram.png"  alt="instagram" />
           </a>
           <a href="#">
-            <img src="./github.png"  alt="" />
+            <img src="./github.png"  alt="github" />
           </a>
           <a href="#">
-            <img src="./youtube.png" alt="" />
+            <img src="./youtube.png" alt="youtube" />
           </a>
         </div>
       </div>
